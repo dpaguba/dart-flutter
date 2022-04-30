@@ -6,12 +6,12 @@ void main(List<String> args) {
 
   // StreamSubscription subscription = numberGenerator.getStream.listen((counter) {
   //   print(counter);
-  // }, onError: (error) {
+  // }, onError: (error) {    // if stream has error
   //   // handle error
   //   print("error");
-  // }, onDone: () {
+  // }, onDone: () {          // if stream is closed
   //   print("done");
-  // }, cancelOnError: false);
+  // }, cancelOnError: false);  // stream has error, but id like to stay subscribed
 
   // many active subscriptions are possible
   Stream numberGenerator = NumberGenerator().getStream.asBroadcastStream();
@@ -26,7 +26,7 @@ void main(List<String> args) {
   // usage of subscriptions
   // sub1.pause();
   // sub1.resume();
-  // sub1.cancel();
+  // sub1.cancel();     // stop subscription
 }
 
 class NumberGenerator {
