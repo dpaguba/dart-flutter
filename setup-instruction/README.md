@@ -1,6 +1,7 @@
 # Flutter SDK Setup for MACos 🖥
 
 [Get Android Studio](https://developer.android.com/studio?gclid=CjwKCAjwgr6TBhAGEiwA3aVuIXUs2UIHDcyMlZpWjHLOITDyhWE8D77jXdrMOGznhSSpkTG-LhXEkBoCcmMQAvD_BwE&gclsrc=aw.ds)
+
 [Get the Flutter SDK](https://docs.flutter.dev/get-started/install/macos#androi)
 
 ## Issues I encountered during installation 🤷🏻‍♂️
