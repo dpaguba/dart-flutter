@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/presentation/widgets_examples/widgets/container_text_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);
@@ -11,24 +12,22 @@ class WidgetsExamplesPage extends StatelessWidget {
 
       // AppBar
       appBar: AppBar(
+        // Styles for AppBar
+        // another property to center the title in appBar
+        centerTitle: true,
+        backgroundColor: Colors.blue[200],
+
         // Create leading button
         leading: const Icon(
           Icons.home,
           size: 40,
         ),
-        // another property to center the title in appBar
-        // centerTitle: true,
 
-        // Styles for AppBar
-        backgroundColor: Colors.blue[200],
-
-        title: const Center(child: Text("Widgets Example")),
+        title: const Text("Widgets Example"),
       ),
 
       // Body
-      body: const Center(
-        child: Text("Hello World!"),
-      ),
+      body: const ContainerTextExample(),
     );
   }
 }
