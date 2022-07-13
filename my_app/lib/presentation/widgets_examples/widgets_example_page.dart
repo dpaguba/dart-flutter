@@ -27,7 +27,38 @@ class WidgetsExamplesPage extends StatelessWidget {
       ),
 
       // Body
-      body: const ContainerTextExample(),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              ContainerTextExample(),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                color: Colors.yellow,
+                width: 250,
+                height: 150,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                color: Colors.green,
+                width: 250,
+                height: 150,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              // ContainerTextExample(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
