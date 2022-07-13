@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:my_app/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);
@@ -54,7 +55,7 @@ class WidgetsExamplesPage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              // ContainerTextExample(),
+              RowExpandedExample(),
             ],
           ),
         ),
