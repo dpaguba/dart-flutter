@@ -13,6 +13,8 @@ class ProfilePicture extends StatelessWidget {
             height: 230,
             width: 200,
             // color: Colors.blue,
+            // Mit Hilfe des Stack Widget kann man Widget uebereinander platzieren
+            // Im Stack richtet man die Widgets mit Align und Positioned aus
             child: Stack(children: [
               SizedBox(
                 height: 200,
