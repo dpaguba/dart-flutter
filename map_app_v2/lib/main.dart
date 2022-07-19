@@ -5,6 +5,7 @@ import 'package:latlong2/latlong.dart'; // Recommended for most use-cases
 import 'hompage.dart';
 
 void main() {
+  WidgetsApp.debugAllowBannerOverride = false;
   runApp(const MyApp());
 }
 
