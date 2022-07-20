@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
           FlutterMap(
             options: MapOptions(
               center: LatLng(51, 6.961899),
-              zoom: 10.0,
-              maxZoom: 18.0,
+              minZoom: 2.0,
+              maxZoom: 14.0,
               enableScrollWheel: true,
               scrollWheelVelocity: 0.0001,
             ),
@@ -71,6 +71,13 @@ class _HomePageState extends State<HomePage> {
                     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 subdomains: ['a', 'b', 'c'],
                 userAgentPackageName: 'com.map.app',
+              ),
+              TileLayerOptions(
+                wmsOptions: WMSTileLayerOptions(
+                  baseUrl: 'https://www.wms.nrw.de/geobasis/wms_nw_dop?',
+                  layers: ['nw_dop_rgb'],
+                ),
+                backgroundColor: Colors.transparent,
               ),
               MarkerLayerOptions(markers: _locations),
             ],
